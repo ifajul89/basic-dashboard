@@ -1,4 +1,4 @@
-import React from "react";
+import { HiOutlineDotsVertical } from "react-icons/hi";
 import {
   LineChart,
   Line,
@@ -10,7 +10,6 @@ import {
   Area,
 } from "recharts";
 
-// Example data
 const data = [
   { hour: "00hr", value: 0 },
   { hour: "02hr", value: 100 },
@@ -19,7 +18,7 @@ const data = [
   { hour: "08hr", value: 300 },
   { hour: "10hr", value: 350 },
   { hour: "12hr", value: 400 },
-  { hour: "14hr", value: 600 }, // Peak
+  { hour: "14hr", value: 600 },
   { hour: "16hr", value: 500 },
   { hour: "20hr", value: 550 },
   { hour: "22hr", value: 650 },
@@ -29,6 +28,13 @@ const data = [
 const RevenueChart = () => {
   return (
     <div className="w-full max-w-4xl mx-auto p-4 bg-white rounded-lg">
+      <div className="flex justify-between items-center">
+        <h5>
+          Revenue <span className="text-lg">600 AED</span>
+        </h5>
+        <HiOutlineDotsVertical className="text-lg" />
+      </div>
+      <hr className="my-3" />
       <div className="w-full h-96">
         <ResponsiveContainer width="100%" height="100%">
           <LineChart

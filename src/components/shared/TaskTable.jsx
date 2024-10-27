@@ -1,6 +1,5 @@
 import { HiOutlineDotsVertical } from "react-icons/hi";
 import TaskOrLog from "./TaskOrLog";
-// ({Task, TaskNumber, Log, Time, Logger})
 
 const TaskTable = ({ CardName }) => {
   console.log(CardName);

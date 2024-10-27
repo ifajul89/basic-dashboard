@@ -8,7 +8,7 @@ import { RiCoupon3Line } from "react-icons/ri";
 
 const CardDetails = () => {
   return (
-    <div className="grid grid-cols-4 gap-5">
+    <div className="grid grid-cols-2 lg:grid-cols-4 gap-2 md:gap-5">
       <EachCard Icon={<RxAvatar />} Number="3310" Name="Total Customer" />
       <EachCard Icon={<FaRegNoteSticky />} Number="10223" Name="Total Orders" />
       <EachCard

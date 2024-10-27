@@ -25,9 +25,9 @@ const data = [
   { hour: "24hr", value: 700 },
 ];
 
-const RevenueChart = () => {
+const RevenueData = () => {
   return (
-    <div className="w-full max-w-4xl mx-auto p-4 bg-white rounded-lg">
+    <div className="w-full p-4 bg-white rounded-lg">
       <div className="flex justify-between items-center">
         <h5>
           Revenue <span className="text-lg">600 AED</span>
@@ -35,7 +35,7 @@ const RevenueChart = () => {
         <HiOutlineDotsVertical className="text-lg" />
       </div>
       <hr className="my-3" />
-      <div className="w-full h-96">
+      <div className="w-full h-[310px]">
         <ResponsiveContainer width="100%" height="100%">
           <LineChart
             data={data}
@@ -66,4 +66,4 @@ const RevenueChart = () => {
   );
 };
 
-export default RevenueChart;
+export default RevenueData;

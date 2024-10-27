@@ -29,14 +29,8 @@ const data = [
 const RevenueChart = () => {
   return (
     <div className="w-full max-w-4xl mx-auto p-4 bg-white rounded-lg">
-      <div className="mb-4 text-center">
-        <h2 className="text-2xl font-semibold text-gray-800">
-          Revenue <span className="font-bold text-pink-600">600 AED</span>
-        </h2>
-      </div>
-
-      <div className="w-full h-min">
-        <ResponsiveContainer>
+      <div className="w-full h-96">
+        <ResponsiveContainer width="100%" height="100%">
           <LineChart
             data={data}
             margin={{ top: 20, right: 30, left: 0, bottom: 0 }}
@@ -44,22 +38,20 @@ const RevenueChart = () => {
             <XAxis
               dataKey="hour"
               tick={{ fill: "#6B7280" }}
-              className="text-sm"
+              className="text-xs"
             />
-
             <YAxis
+              tick={{ fill: "#6B7280" }}
               tickFormatter={(value) => `AED ${value}`}
-              className="text-sm"
+              className="text-xs"
             />
-
             <Tooltip />
-
             <Line
               type="monotone"
               dataKey="value"
               stroke="#9B0042"
               strokeWidth={4}
-              dot={{ r: 3, fill: "#9B0042" }}
+              dot={{ r: 3, fill: "#9B0042" }} // Customize the dots at data points
             />
           </LineChart>
         </ResponsiveContainer>

@@ -5,7 +5,7 @@ import ProfileImage from "../assets/profile-image.jpg";
 
 const SearchBox = () => {
   return (
-    <div className="border bg-white border-gray-200 text-gray-400 rounded-xl flex items-center justify-between px-2 md:px-4 py-2 md:py-3 gap-2 md:gap-3">
+    <div className="border bg-white border-gray-200 text-gray-400 rounded-xl flex items-center justify-between px-2 md:px-4 py-2 md:py-3 gap-1 sm:gap-2 md:gap-3">
       <CgSearch className="text-2xl" />
       <input
         type="text"

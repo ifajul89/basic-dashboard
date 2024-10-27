@@ -1,7 +1,9 @@
+import SearchBox from "../components/SearchBox";
+
 const Root = () => {
   return (
-    <div>
-      Root
+    <div className="container mx-auto py-5 px-10">
+      <SearchBox />
     </div>
   );
 };

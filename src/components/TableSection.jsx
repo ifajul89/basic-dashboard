@@ -8,7 +8,7 @@ const TableSection = () => {
       <RevenueData />
       <TaskTable CardName="Pending Tasks" />
       <OrderSummary />
-      {/* <TaskTable CardName="Activity Log" /> */}
+      <TaskTable CardName="Activity Log" />
     </div>
   );
 };

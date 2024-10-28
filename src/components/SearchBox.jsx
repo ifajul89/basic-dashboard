@@ -9,11 +9,11 @@ const SearchBox = () => {
       <CgSearch className="text-gray-400 min-w-4 text-2xl" />
       <input
         type="text"
-        className="flex-1 outline-none py-1 md:py-3"
+        className="flex-1 w-2/3 border outline-none py-1 md:py-3"
         placeholder="Search here..."
       />
-      <PiBellSimpleBold className="min-w-4 text-lg" />
-      <BiMessageSquareDetail className="min-w-4 text-lg" />
+      <PiBellSimpleBold className="text-lg" />
+      <BiMessageSquareDetail className="text-lg" />
       <div className="divider divider-horizontal m-0"></div>
       <div className="hidden md:flex items-center gap-2">
         <div className="w-max">
@@ -29,7 +29,7 @@ const SearchBox = () => {
       <div className="dropdown dropdown-end md:hidden">
         <div tabIndex={0} role="button">
           <img
-            className="w-11 min-w-9 rounded-full border border-gray-200"
+            className="w-11 rounded-full border border-gray-200"
             src={ProfileImage}
             alt="Profile Image"
           />

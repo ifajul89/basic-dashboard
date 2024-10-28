@@ -1,8 +1,11 @@
-# React + Vite
+# WTN Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This Website is a task project given by the Company named "We Are The Nexts. (WTN)"
 
-Currently, two official plugins are available:
+👉🏻 [Live Link](https://wtn-dashboard.netlify.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+About:
+
+- React JS has been used as Javascript Framework,
+- Tailwind as CSS,
+- For the charts, a react component libray called "[Recharts](https://recharts.org/en-US/)" was used.

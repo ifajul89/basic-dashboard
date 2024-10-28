@@ -9,7 +9,7 @@ const SearchBox = () => {
       <CgSearch className="text-gray-400 min-w-4 text-2xl" />
       <input
         type="text"
-        className="flex-1 w-2/3 border outline-none py-1 md:py-3"
+        className="flex-1 w-2/3 outline-none py-1 md:py-3"
         placeholder="Search here..."
       />
       <PiBellSimpleBold className="text-lg" />

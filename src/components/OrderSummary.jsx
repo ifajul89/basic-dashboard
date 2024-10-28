@@ -22,15 +22,15 @@ const OrderSummary = () => {
       </div>
       <hr className="my-3" />
       <div className="bg-pink-100 text-pink-800 flex items-center justify-between p-4 rounded-xl">
-        <div className="flex items-end gap-1 ">
+        <div className="flex items-center gap-1">
           <MdOutlineShoppingBag className="text-2xl" />
-          <h6>{data[1].value} new orders!</h6>
+          <h6 className="text-xs sm:text-base">{data[1].value} new orders!</h6>
         </div>
         <button className="btn btn-sm bg-white hover:bg-gray-50 font-light text-pink-800 border-none">
           Manage Orders
         </button>
       </div>
-      <div className="grid grid-cols-4 my-5 gap-2 md:gap-5">
+      <div className="grid grid-cols-2 lg:grid-cols-4 my-5 gap-2 md:gap-5">
         {data.map((box) => (
           <div className="border border-gray-200 rounded-lg p-2 md:p-3 leading-4">
             <h6 className="md:text-3xl">{box.value}</h6>
@@ -38,8 +38,8 @@ const OrderSummary = () => {
           </div>
         ))}
       </div>
-      <div className="flex flex-col md:flex-row items-center justify-between">
-        <div className="w-full md:w-1/2">
+      <div className="flex flex-col lg:flex-row items-center gap-3 lg:gap-5 justify-between">
+        <div className="w-full lg:w-1/2">
           <ResponsiveContainer width="100%" height={200}>
             <PieChart>
               <Pie
@@ -59,7 +59,7 @@ const OrderSummary = () => {
             </PieChart>
           </ResponsiveContainer>
         </div>
-        <div className="w-full md:w-1/2">
+        <div className="w-full lg:w-1/2">
           {data.map((entry) => (
             <div key={entry.name} className="mb-4">
               <div className="flex items-center justify-between">

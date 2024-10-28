@@ -5,7 +5,7 @@ import TableSection from "../components/TableSection";
 
 const Root = () => {
   return (
-    <div className="container mx-auto p-2 md:py-5 md:px-10">
+    <div className="container mx-auto p-3 md:py-5 md:px-10">
       <SearchBox />
       <DateTimePicker />
       <CardDetails />

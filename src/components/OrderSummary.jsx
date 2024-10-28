@@ -12,16 +12,15 @@ const COLORS = ["#4CAF50", "#2196F3", "#FFC107", "#F44336"];
 const OrderSummary = () => {
   return (
     <div className="flex flex-col md:flex-row items-center justify-between bg-white p-6 rounded-lg">
-      {/* Donut Chart */}
-      <div className="w-full md:w-1/3 mb-6 md:mb-0">
+      <div className="w-full md:w-1/2 mb-6 md:mb-0">
         <ResponsiveContainer width="100%" height={200}>
           <PieChart>
             <Pie
               data={data}
               cx="50%"
               cy="50%"
-              innerRadius={60}
-              outerRadius={80}
+              innerRadius={70}
+              outerRadius={100}
               fill="#8884d8"
               paddingAngle={5}
               dataKey="percentage"
@@ -34,27 +33,18 @@ const OrderSummary = () => {
         </ResponsiveContainer>
       </div>
 
-      {/* Progress Bars */}
-      <div className="w-full md:w-2/3">
-        {data.map((entry) => (
-          <div
-            key={entry.name}
-            className="flex items-center justify-between mb-4"
-          >
-            {/* Label and Percentage */}
-            <div className="flex items-center">
-              <span className="text-gray-700 font-medium">{entry.name}</span>
-              <span className="ml-2 text-gray-500">({entry.percentage}%)</span>
-            </div>
-
-            {/* Value */}
-            <span className="text-gray-500">{entry.value}</span>
-          </div>
-        ))}
-
-        {/* Render the progress bars */}
+      <div className="w-full md:w-1/2">
         {data.map((entry) => (
           <div key={entry.name} className="mb-4">
+            <div className="flex items-center justify-between">
+              <div className="flex items-center mb-1">
+                <span className="text-gray-700 font-medium">{entry.name}</span>
+                <span className="ml-1 text-gray-500">
+                  ({entry.percentage}%)
+                </span>
+              </div>
+              <span className="text-gray-500">{entry.value}</span>
+            </div>
             <div className="w-full h-2 bg-gray-200 rounded-full">
               <div
                 className="h-2 rounded-full"

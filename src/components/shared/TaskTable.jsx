@@ -2,7 +2,6 @@ import { HiOutlineDotsVertical } from "react-icons/hi";
 import TaskOrLog from "./TaskOrLog";
 
 const TaskTable = ({ CardName }) => {
-  console.log(CardName);
 
   return (
     <div className="bg-white rounded-xl p-5 h-min">

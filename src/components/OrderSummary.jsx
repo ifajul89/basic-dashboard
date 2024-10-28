@@ -30,11 +30,11 @@ const OrderSummary = () => {
           Manage Orders
         </button>
       </div>
-      <div className="grid grid-cols-4 my-5 gap-5">
+      <div className="grid grid-cols-4 my-5 gap-2 md:gap-5">
         {data.map((box) => (
-          <div className="border border-gray-200 rounded-lg p-3 leading-4">
-            <h6 className="text-3xl">{box.value}</h6>
-            <p className="text-gray-400 font-light">{box.name}</p>
+          <div className="border border-gray-200 rounded-lg p-2 md:p-3 leading-4">
+            <h6 className="md:text-3xl">{box.value}</h6>
+            <p className="text-gray-400 font-light text-xs">{box.name}</p>
           </div>
         ))}
       </div>

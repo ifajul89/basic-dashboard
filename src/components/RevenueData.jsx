@@ -25,6 +25,11 @@ const data = [
   { hour: "24hr", value: 700 },
 ];
 
+const chatrMargin =
+  window.innerWidth <= 768
+    ? { top: 20, right: 30, left: 0, bottom: 0 }
+    : { top: 20, right: 15, left: -15, bottom: 0 };
+
 const RevenueData = () => {
   return (
     <div className="w-full p-4 bg-white rounded-lg">
@@ -37,10 +42,7 @@ const RevenueData = () => {
       <hr className="my-3" />
       <div className="w-full h-[310px]">
         <ResponsiveContainer width="100%" height="100%">
-          <LineChart
-            data={data}
-            margin={{ top: 20, right: 30, left: 0, bottom: 0 }}
-          >
+          <LineChart data={data} margin={chatrMargin}>
             <XAxis
               dataKey="hour"
               tick={{ fill: "#6B7280" }}
@@ -57,7 +59,7 @@ const RevenueData = () => {
               dataKey="value"
               stroke="#9B0042"
               strokeWidth={4}
-              dot={{ r: 3, fill: "#9B0042" }} // Customize the dots at data points
+              dot={{ r: 3, fill: "#9B0042" }}
             />
           </LineChart>
         </ResponsiveContainer>

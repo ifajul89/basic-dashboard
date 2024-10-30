@@ -1,8 +1,8 @@
-# WTN Dashboard
+# Basic Dashboard
 
-This Website is a task project given by the Company named "We Are The Nexts. (WTN)"
+"This website resembles a basic front-end dashboard project."
 
-👉🏻 [Live Link](https://wtn-dashboard.netlify.app/)
+👉🏻 [Live Link](https://basic-dashboard-design.netlify.app/)
 
 About:
 
